@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>dscdevstudios | Home</title>
 
@@ -59,7 +61,16 @@
     <!-- <a class="btn" href="#info"><i class="fa-solid fa-angles-down"></i> Read More</a> -->
   </div>
   <!-- <img src="/darkwave.svg"> -->
-
+<script>
+  
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+window.alert('SITE ISNT MOBILE FREINDLY YET!')
+window.location.replace('https://google.com')
+}
+if (screen.width <= 699) {
+    window.alert('SITE ISNT MOBILE FREINDLY YET!')
+    window.location.replace('https://google.com')    }
+  </script>
 
 </head>
 
