@@ -163,6 +163,7 @@ section {
 margin:10px 20px;  padding:35px 50px; text-align: center;
   background-color: #221f29;
   border-radius:10px;
+  height:430px;
 }
 .jumbotron button{
   background-color:transparent;
@@ -214,4 +215,16 @@ a{
 .card span{
   color:#b9bbbe;
   
+}
+
+.ad1{
+  width: 65%;
+  margin-left:20px;
+  border:1px black solid;
+  border-radius:7px;
+  padding:10px;
+  background-color:#3c3640;
+}
+.ad1 h1{
+  font-size:20px;
 }
