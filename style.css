@@ -23,6 +23,14 @@ body {
   section{display:none;}
 
 }
+.error{
+    margin-left:50px;
+display:none;
+}
+.form{
+  margin-top:100px;
+  margin-left:50px;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -151,6 +159,8 @@ section {
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
+  form{display:none;}
+  .error{display:block;}
   .column {
     width: 100%;
     display: block;
@@ -229,4 +239,111 @@ a{
 }
 .ad1 h1{
   font-size:20px;
+}
+
+.user-input-wrp {
+	position: relative;
+	width: 50%;
+}
+.user-input-wrp .inputText{
+	width: 100%;
+	outline: none;
+	border:0;
+    border-bottom: 1px solid #bfbfbf;
+ 	box-shadow: none !important;
+}
+
+.user-input-wrp .floating-label {
+	position: absolute;
+	pointer-events: none;
+	top: 18px;
+	left: 0px;
+	transition: 0.2s ease all;
+}
+.user-input-wrp input:focus ~ .floating-label,
+.user-input-wrp input:not(:focus):valid ~ .floating-label{
+	top: 0px;
+	left: 0px;
+	font-size: 13px;
+	opacity: 1;
+}
+
+input {
+    display: block;
+    max-width: 40%;
+  color:white;
+    border: none;
+    border-bottom: 1px solid #bfbfbf;
+/*     box-sizing: border-box; */
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+/*     padding-top: 30px; */
+    padding-bottom: 5px;
+    -webkit-appearance: none;
+    background: transparent;
+}
+input[type=text]:focus {
+ color:white;}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color:white;
+}
+
+select{
+  background-color:#3c3640;
+  color:white;
+  border:0;
+  padding:10px;
+  border-radius:15px;
+      font-family: "Poppins", sans-serif;
+
+}
+
+
+.container {
+  display: flex;
+}
+
+#col-1 {
+  margin-left:50px;
+  flex: 1;
+}
+
+#col-2 {
+  flex: 1;
+}
+
+textarea{
+        font-family: "Poppins", sans-serif;
+
+  background-color:#3c3640;
+  color:white;
+  border:0;
+  padding:10px;
+  height:100px;
+  border-radius:10px;
+  width:400px;
+}
+
+.container button{ border:0;
+  background-color:transparent;
+  border:2px solid white;
+  cursor:pointer;
+  color:white;
+          font-family: "Poppins", sans-serif;
+
+  padding:16px 36px;
+  border-radius:10px;
+  font-weight:700;
+  transition:0.4s;
+  
+}
+.container button:hover{
+    background-color:white;
+  color:black;
 }
